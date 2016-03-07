@@ -15,8 +15,10 @@
 
 EventBus怎么实现的来着？用反射，那我也用反射……
 
-**然后，然后我就做出来一个超简版的EventBus，我真没抄啊。但实现原理完全一样啊……只能说殊途同归吧……**
+**然后，然后我就做出来一个超简版的EventBus，我真没抄啊，可是越写越像。但实现原理完全一样啊……只能说殊途同归吧……**
 
+
+**这个分发组件只能在主线程中分发事件。**
 
 ###实现机制
 
@@ -130,9 +132,9 @@ EventBus怎么实现的来着？用反射，那我也用反射……
     }
 
 
-是不是真的很简单？具体调用看[Demo代码](./DistributeDemo/app/src/main/java/com/lizhaoxuan/distributedemo)
+是不是真的很简单？具体调用看[Demo代码](https://github.com/lizhaoxuan/Distribute/blob/master/DistributeDemo/app/src/main/java/com/lizhaoxuan/distributedemo/MainActivity.java)
 
-[另外需要具体观察者接口的实现方法]()：效率上较这样更优，但使用没有这样方便。
+[另外还有另外一种实现方案，更像原版的观察者](https://github.com/lizhaoxuan/Distribute/blob/master/DistributeDemo/lib/src/main/java/com/zhaoxuan/distribute/deprecated/DistributePool.java)：效率上较这样更优，但使用没有这样方便。
 	
 
 
